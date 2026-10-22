@@ -2,7 +2,7 @@
 
 INES-Ruhengeri · Integrated Mobile and Artificial Intelligence · Group assignment 3
 
-A standalone Android product that answers “who built this?” with an evidence-grounded member profile. The matcher is a small TF-IDF service. It does not invent biographies, metrics or testimonials
+A standalone Android product that answers “who built this?” with an evidence-grounded member profile. The matcher is a small TF-IDF service. It does not invent biographies, metrics or testimonials.
 
 | Field | Value |
 | --- | --- |
