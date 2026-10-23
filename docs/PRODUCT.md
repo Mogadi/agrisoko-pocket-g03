@@ -19,4 +19,3 @@ AgriSoko Pocket G03 is a small demonstration product for potato cooperatives, em
 5. Lazarus Simboya Ira Inyasio — Offline and quality engineer  
 6. Feras Saifaddin Ismail Mohammed — Release and evidence engineer  
 
-GitHub username for the repository owner is `Mogadi`. Nuzha's GitHub username is `nuzha0923-cloud`; the remaining GitHub usernames in `members.json` are placeholders (`ehab-g03`, `mojtaba-g03`, `lazarus-g03`, `feras-g03`) until each member replaces them with their real account.
