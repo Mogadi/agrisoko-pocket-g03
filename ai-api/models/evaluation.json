@@ -1,0 +1,348 @@
+{
+  "threshold": 0.45,
+  "memberQueryCount": 19,
+  "noMatchQueryCount": 6,
+  "top1Accuracy": 1.0,
+  "noMatchRejectionAccuracy": 1.0,
+  "confusion": {
+    "mohammed-osama-hasan": {
+      "mohammed-osama-hasan": 4
+    },
+    "nuzha-zainel-abdeen": {
+      "nuzha-zainel-abdeen": 3
+    },
+    "ehab-fakhralden": {
+      "ehab-fakhralden": 3
+    },
+    "mojtaba-abdalitieef": {
+      "mojtaba-abdalitieef": 3
+    },
+    "lazarus-simboya": {
+      "lazarus-simboya": 3
+    },
+    "feras-saifaddin": {
+      "feras-saifaddin": 3
+    },
+    "NO_MATCH": {
+      "NO_MATCH": 6
+    }
+  },
+  "confusionTable": {
+    "NO_MATCH": {
+      "NO_MATCH": 6,
+      "ehab-fakhralden": 0,
+      "feras-saifaddin": 0,
+      "lazarus-simboya": 0,
+      "mohammed-osama-hasan": 0,
+      "mojtaba-abdalitieef": 0,
+      "nuzha-zainel-abdeen": 0
+    },
+    "ehab-fakhralden": {
+      "NO_MATCH": 0,
+      "ehab-fakhralden": 3,
+      "feras-saifaddin": 0,
+      "lazarus-simboya": 0,
+      "mohammed-osama-hasan": 0,
+      "mojtaba-abdalitieef": 0,
+      "nuzha-zainel-abdeen": 0
+    },
+    "feras-saifaddin": {
+      "NO_MATCH": 0,
+      "ehab-fakhralden": 0,
+      "feras-saifaddin": 3,
+      "lazarus-simboya": 0,
+      "mohammed-osama-hasan": 0,
+      "mojtaba-abdalitieef": 0,
+      "nuzha-zainel-abdeen": 0
+    },
+    "lazarus-simboya": {
+      "NO_MATCH": 0,
+      "ehab-fakhralden": 0,
+      "feras-saifaddin": 0,
+      "lazarus-simboya": 3,
+      "mohammed-osama-hasan": 0,
+      "mojtaba-abdalitieef": 0,
+      "nuzha-zainel-abdeen": 0
+    },
+    "mohammed-osama-hasan": {
+      "NO_MATCH": 0,
+      "ehab-fakhralden": 0,
+      "feras-saifaddin": 0,
+      "lazarus-simboya": 0,
+      "mohammed-osama-hasan": 4,
+      "mojtaba-abdalitieef": 0,
+      "nuzha-zainel-abdeen": 0
+    },
+    "mojtaba-abdalitieef": {
+      "NO_MATCH": 0,
+      "ehab-fakhralden": 0,
+      "feras-saifaddin": 0,
+      "lazarus-simboya": 0,
+      "mohammed-osama-hasan": 0,
+      "mojtaba-abdalitieef": 3,
+      "nuzha-zainel-abdeen": 0
+    },
+    "nuzha-zainel-abdeen": {
+      "NO_MATCH": 0,
+      "ehab-fakhralden": 0,
+      "feras-saifaddin": 0,
+      "lazarus-simboya": 0,
+      "mohammed-osama-hasan": 0,
+      "mojtaba-abdalitieef": 0,
+      "nuzha-zainel-abdeen": 3
+    }
+  },
+  "errors": [],
+  "rows": [
+    {
+      "id": "m1-name",
+      "kind": "name",
+      "query": "Tell me about Mohammed Osama Hasan",
+      "expectedId": "mohammed-osama-hasan",
+      "predictedId": "mohammed-osama-hasan",
+      "confidence": 0.8778,
+      "correct": true,
+      "reason": "Matched terms: mohammed, osama, hasan Exact name/alias boost applied for 'mohammed osama hasan'. Content-term boost for: mohammed, osama, hasan. Cosine similarity 0.218; confidence 0.878."
+    },
+    {
+      "id": "m1-alias",
+      "kind": "alias",
+      "query": "Who is Osama the group leader?",
+      "expectedId": "mohammed-osama-hasan",
+      "predictedId": "mohammed-osama-hasan",
+      "confidence": 0.8627,
+      "correct": true,
+      "reason": "Matched terms: who, is, osama, the, group, leader Exact name/alias boost applied for 'osama'. Content-term boost for: osama, group, leader. Cosine similarity 0.203; confidence 0.863."
+    },
+    {
+      "id": "m1-role",
+      "kind": "role",
+      "query": "Who is the Product and GitHub lead?",
+      "expectedId": "mohammed-osama-hasan",
+      "predictedId": "mohammed-osama-hasan",
+      "confidence": 0.6099,
+      "correct": true,
+      "reason": "Matched terms: who, is, the, product, and, github, lead Content-term boost for: product, github, lead. Cosine similarity 0.250; confidence 0.610."
+    },
+    {
+      "id": "m1-feature",
+      "kind": "feature",
+      "query": "Who built the contribution evidence map and repository layout?",
+      "expectedId": "mohammed-osama-hasan",
+      "predictedId": "mohammed-osama-hasan",
+      "confidence": 0.7856,
+      "correct": true,
+      "reason": "Matched terms: who, built, the, contribution, evidence, map, and, repository Content-term boost for: contribution, evidence, map, repository, layout. Cosine similarity 0.336; confidence 0.786."
+    },
+    {
+      "id": "m2-name",
+      "kind": "name",
+      "query": "Tell me about Nuzha ZainEl-Abdeen",
+      "expectedId": "nuzha-zainel-abdeen",
+      "predictedId": "nuzha-zainel-abdeen",
+      "confidence": 0.7598,
+      "correct": true,
+      "reason": "Matched terms: nuzha, zainel-abdeen Exact name/alias boost applied for 'nuzha'. Content-term boost for: nuzha, zainel-abdeen. Cosine similarity 0.220; confidence 0.760."
+    },
+    {
+      "id": "m2-alias",
+      "kind": "alias",
+      "query": "Who is Nuzha the AI engineer?",
+      "expectedId": "nuzha-zainel-abdeen",
+      "predictedId": "nuzha-zainel-abdeen",
+      "confidence": 0.74,
+      "correct": true,
+      "reason": "Matched terms: who, is, nuzha, the, ai, engineer Exact name/alias boost applied for 'nuzha'. Content-term boost for: nuzha, engineer. Cosine similarity 0.200; confidence 0.740."
+    },
+    {
+      "id": "m2-feature",
+      "kind": "feature",
+      "query": "Who built the TF-IDF matching engine and members.json schema?",
+      "expectedId": "nuzha-zainel-abdeen",
+      "predictedId": "nuzha-zainel-abdeen",
+      "confidence": 0.7828,
+      "correct": true,
+      "reason": "Matched terms: who, built, the, tf-idf, matching, engine, and, members.json Content-term boost for: tf-idf, matching, engine, members.json, schema. Cosine similarity 0.333; confidence 0.783."
+    },
+    {
+      "id": "m3-name",
+      "kind": "name",
+      "query": "Tell me about Ehab Fakhralden Mohamed Hamid",
+      "expectedId": "ehab-fakhralden",
+      "predictedId": "ehab-fakhralden",
+      "confidence": 0.9726,
+      "correct": true,
+      "reason": "Matched terms: ehab, fakhralden, mohamed, hamid Exact name/alias boost applied for 'ehab fakhralden mohamed hamid'. Content-term boost for: ehab, fakhralden, mohamed, hamid. Cosine similarity 0.223; confidence 0.973."
+    },
+    {
+      "id": "m3-alias",
+      "kind": "alias",
+      "query": "Who is Ehab?",
+      "expectedId": "ehab-fakhralden",
+      "predictedId": "ehab-fakhralden",
+      "confidence": 0.5555,
+      "correct": true,
+      "reason": "Matched terms: is, ehab Exact name/alias boost applied for 'ehab'. Content-term boost for: ehab. Cosine similarity 0.135; confidence 0.555."
+    },
+    {
+      "id": "m3-feature",
+      "kind": "feature",
+      "query": "Who implemented the FastAPI endpoints and Pydantic validation?",
+      "expectedId": "ehab-fakhralden",
+      "predictedId": "ehab-fakhralden",
+      "confidence": 0.7338,
+      "correct": true,
+      "reason": "Matched terms: implemented, the, fastapi, and, pydantic, validation Content-term boost for: implemented, fastapi, pydantic, validation. Cosine similarity 0.284; confidence 0.734."
+    },
+    {
+      "id": "m4-name",
+      "kind": "name",
+      "query": "Tell me about Mojtaba Abdalitieef Ahmed",
+      "expectedId": "mojtaba-abdalitieef",
+      "predictedId": "mojtaba-abdalitieef",
+      "confidence": 0.902,
+      "correct": true,
+      "reason": "Matched terms: about, mojtaba, abdalitieef, ahmed Exact name/alias boost applied for 'mojtaba abdalitieef ahmed'. Content-term boost for: mojtaba, abdalitieef, ahmed. Cosine similarity 0.242; confidence 0.902."
+    },
+    {
+      "id": "m4-alias",
+      "kind": "alias",
+      "query": "Who is Moj the mobile UI engineer?",
+      "expectedId": "mojtaba-abdalitieef",
+      "predictedId": "mojtaba-abdalitieef",
+      "confidence": 0.8526,
+      "correct": true,
+      "reason": "Matched terms: is, moj, the, mobile, ui, engineer Exact name/alias boost applied for 'moj'. Content-term boost for: moj, mobile, engineer. Cosine similarity 0.193; confidence 0.853."
+    },
+    {
+      "id": "m4-feature",
+      "kind": "feature",
+      "query": "Who built the React Native screens and typed navigation?",
+      "expectedId": "mojtaba-abdalitieef",
+      "predictedId": "mojtaba-abdalitieef",
+      "confidence": 0.8429,
+      "correct": true,
+      "reason": "Matched terms: built, the, react, native, screens, and, typed, navigation Content-term boost for: react, native, screens, typed, navigation. Cosine similarity 0.393; confidence 0.843."
+    },
+    {
+      "id": "m5-name",
+      "kind": "name",
+      "query": "Tell me about Lazarus Simboya Ira Inyasio",
+      "expectedId": "lazarus-simboya",
+      "predictedId": "lazarus-simboya",
+      "confidence": 0.9895,
+      "correct": true,
+      "reason": "Matched terms: about, lazarus, simboya, ira, inyasio Exact name/alias boost applied for 'lazarus simboya ira inyasio'. Content-term boost for: lazarus, simboya, ira, inyasio. Cosine similarity 0.240; confidence 0.990."
+    },
+    {
+      "id": "m5-alias",
+      "kind": "alias",
+      "query": "Who is Lazarus?",
+      "expectedId": "lazarus-simboya",
+      "predictedId": "lazarus-simboya",
+      "confidence": 0.5933,
+      "correct": true,
+      "reason": "Matched terms: who, is, lazarus Exact name/alias boost applied for 'lazarus'. Content-term boost for: lazarus. Cosine similarity 0.173; confidence 0.593."
+    },
+    {
+      "id": "m5-feature",
+      "kind": "feature",
+      "query": "Who built offline mode, AsyncStorage cache and NetInfo recovery?",
+      "expectedId": "lazarus-simboya",
+      "predictedId": "lazarus-simboya",
+      "confidence": 0.7711,
+      "correct": true,
+      "reason": "Matched terms: who, built, offline, mode, asyncstorage, cache, and, netinfo Content-term boost for: offline, asyncstorage, cache, netinfo, recovery. Cosine similarity 0.321; confidence 0.771."
+    },
+    {
+      "id": "m6-name",
+      "kind": "name",
+      "query": "Tell me about Feras Saifaddin Ismail Mohammed",
+      "expectedId": "feras-saifaddin",
+      "predictedId": "feras-saifaddin",
+      "confidence": 0.9578,
+      "correct": true,
+      "reason": "Matched terms: feras, saifaddin, ismail, mohammed Exact name/alias boost applied for 'feras saifaddin ismail mohammed'. Content-term boost for: feras, saifaddin, ismail, mohammed. Cosine similarity 0.208; confidence 0.958."
+    },
+    {
+      "id": "m6-alias",
+      "kind": "alias",
+      "query": "Who is Feras the release engineer?",
+      "expectedId": "feras-saifaddin",
+      "predictedId": "feras-saifaddin",
+      "confidence": 0.9155,
+      "correct": true,
+      "reason": "Matched terms: who, is, feras, the, release, engineer Exact name/alias boost applied for 'feras'. Content-term boost for: feras, release, engineer. Cosine similarity 0.256; confidence 0.916."
+    },
+    {
+      "id": "m6-feature",
+      "kind": "feature",
+      "query": "Who configured the EAS Android APK and the technical report?",
+      "expectedId": "feras-saifaddin",
+      "predictedId": "feras-saifaddin",
+      "confidence": 0.8149,
+      "correct": true,
+      "reason": "Matched terms: who, configured, the, eas, android, apk, and, technical Content-term boost for: configured, eas, android, apk, technical. Cosine similarity 0.365; confidence 0.815."
+    },
+    {
+      "id": "nm-weather",
+      "kind": "unrelated",
+      "query": "What is the weather in Kigali today?",
+      "expectedId": null,
+      "predictedId": "NO_MATCH",
+      "confidence": 0.0988,
+      "correct": true,
+      "reason": "No confident match was found. Ask for a member name, nickname, role, skill or feature."
+    },
+    {
+      "id": "nm-president",
+      "kind": "unrelated",
+      "query": "Who is the president of Rwanda?",
+      "expectedId": null,
+      "predictedId": "NO_MATCH",
+      "confidence": 0.1113,
+      "correct": true,
+      "reason": "No confident match was found. Ask for a member name, nickname, role, skill or feature."
+    },
+    {
+      "id": "nm-pizza",
+      "kind": "unrelated",
+      "query": "Tell me about pizza recipes",
+      "expectedId": null,
+      "predictedId": "NO_MATCH",
+      "confidence": 0.0951,
+      "correct": true,
+      "reason": "No confident match was found. Ask for a member name, nickname, role, skill or feature."
+    },
+    {
+      "id": "nm-rocket",
+      "kind": "unrelated",
+      "query": "Who built the rocket engine?",
+      "expectedId": null,
+      "predictedId": "NO_MATCH",
+      "confidence": 0.2618,
+      "correct": true,
+      "reason": "No confident match was found. Ask for a member name, nickname, role, skill or feature."
+    },
+    {
+      "id": "nm-gibberish",
+      "kind": "unrelated",
+      "query": "xyzabc qwerty notateam",
+      "expectedId": null,
+      "predictedId": "NO_MATCH",
+      "confidence": 0.0366,
+      "correct": true,
+      "reason": "No confident match was found. Ask for a member name, nickname, role, skill or feature."
+    },
+    {
+      "id": "nm-cook",
+      "kind": "ambiguous",
+      "query": "How do I cook Irish potatoes with beans?",
+      "expectedId": null,
+      "predictedId": "NO_MATCH",
+      "confidence": 0.104,
+      "correct": true,
+      "reason": "No confident match was found. Ask for a member name, nickname, role, skill or feature."
+    }
+  ]
+}

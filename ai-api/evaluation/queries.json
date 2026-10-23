@@ -1,0 +1,157 @@
+{
+  "thresholdUnderTest": 0.45,
+  "memberQueries": [
+    {
+      "id": "m1-name",
+      "query": "Tell me about Mohammed Osama Hasan",
+      "expectedId": "mohammed-osama-hasan",
+      "kind": "name"
+    },
+    {
+      "id": "m1-alias",
+      "query": "Who is Osama the group leader?",
+      "expectedId": "mohammed-osama-hasan",
+      "kind": "alias"
+    },
+    {
+      "id": "m1-role",
+      "query": "Who is the Product and GitHub lead?",
+      "expectedId": "mohammed-osama-hasan",
+      "kind": "role"
+    },
+    {
+      "id": "m1-feature",
+      "query": "Who built the contribution evidence map and repository layout?",
+      "expectedId": "mohammed-osama-hasan",
+      "kind": "feature"
+    },
+    {
+      "id": "m2-name",
+      "query": "Tell me about Nuzha ZainEl-Abdeen",
+      "expectedId": "nuzha-zainel-abdeen",
+      "kind": "name"
+    },
+    {
+      "id": "m2-alias",
+      "query": "Who is Nuzha the AI engineer?",
+      "expectedId": "nuzha-zainel-abdeen",
+      "kind": "alias"
+    },
+    {
+      "id": "m2-feature",
+      "query": "Who built the TF-IDF matching engine and members.json schema?",
+      "expectedId": "nuzha-zainel-abdeen",
+      "kind": "feature"
+    },
+    {
+      "id": "m3-name",
+      "query": "Tell me about Ehab Fakhralden Mohamed Hamid",
+      "expectedId": "ehab-fakhralden",
+      "kind": "name"
+    },
+    {
+      "id": "m3-alias",
+      "query": "Who is Ehab?",
+      "expectedId": "ehab-fakhralden",
+      "kind": "alias"
+    },
+    {
+      "id": "m3-feature",
+      "query": "Who implemented the FastAPI endpoints and Pydantic validation?",
+      "expectedId": "ehab-fakhralden",
+      "kind": "feature"
+    },
+    {
+      "id": "m4-name",
+      "query": "Tell me about Mojtaba Abdalitieef Ahmed",
+      "expectedId": "mojtaba-abdalitieef",
+      "kind": "name"
+    },
+    {
+      "id": "m4-alias",
+      "query": "Who is Moj the mobile UI engineer?",
+      "expectedId": "mojtaba-abdalitieef",
+      "kind": "alias"
+    },
+    {
+      "id": "m4-feature",
+      "query": "Who built the React Native screens and typed navigation?",
+      "expectedId": "mojtaba-abdalitieef",
+      "kind": "feature"
+    },
+    {
+      "id": "m5-name",
+      "query": "Tell me about Lazarus Simboya Ira Inyasio",
+      "expectedId": "lazarus-simboya",
+      "kind": "name"
+    },
+    {
+      "id": "m5-alias",
+      "query": "Who is Lazarus?",
+      "expectedId": "lazarus-simboya",
+      "kind": "alias"
+    },
+    {
+      "id": "m5-feature",
+      "query": "Who built offline mode, AsyncStorage cache and NetInfo recovery?",
+      "expectedId": "lazarus-simboya",
+      "kind": "feature"
+    },
+    {
+      "id": "m6-name",
+      "query": "Tell me about Feras Saifaddin Ismail Mohammed",
+      "expectedId": "feras-saifaddin",
+      "kind": "name"
+    },
+    {
+      "id": "m6-alias",
+      "query": "Who is Feras the release engineer?",
+      "expectedId": "feras-saifaddin",
+      "kind": "alias"
+    },
+    {
+      "id": "m6-feature",
+      "query": "Who configured the EAS Android APK and the technical report?",
+      "expectedId": "feras-saifaddin",
+      "kind": "feature"
+    }
+  ],
+  "noMatchQueries": [
+    {
+      "id": "nm-weather",
+      "query": "What is the weather in Kigali today?",
+      "expectedId": null,
+      "kind": "unrelated"
+    },
+    {
+      "id": "nm-president",
+      "query": "Who is the president of Rwanda?",
+      "expectedId": null,
+      "kind": "unrelated"
+    },
+    {
+      "id": "nm-pizza",
+      "query": "Tell me about pizza recipes",
+      "expectedId": null,
+      "kind": "unrelated"
+    },
+    {
+      "id": "nm-rocket",
+      "query": "Who built the rocket engine?",
+      "expectedId": null,
+      "kind": "unrelated"
+    },
+    {
+      "id": "nm-gibberish",
+      "query": "xyzabc qwerty notateam",
+      "expectedId": null,
+      "kind": "unrelated"
+    },
+    {
+      "id": "nm-cook",
+      "query": "How do I cook Irish potatoes with beans?",
+      "expectedId": null,
+      "kind": "ambiguous"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+export const GROUP = {
+  code: "G03",
+  appName: "AgriSoko Pocket G03",
+  version: "1.0.0",
+  verificationCode: "COMBO-G03-7014",
+  repositoryUrl: "https://github.com/Mogadi/agrisoko-pocket-g03",
+  releaseUrl: "https://github.com/Mogadi/agrisoko-pocket-g03/releases/tag/v1.0.0",
+  apkName: "AgriSokoPocket_G03.apk",
+  packageName: "rw.ines.agrisoko.pocket.g03",
+  institution: "INES-Ruhengeri",
+  defaultApiUrl: "http://127.0.0.1:8000",
+  timeoutMs: 8000,
+  maxQueryLength: 300,
+  minQueryLength: 2,
+} as const;

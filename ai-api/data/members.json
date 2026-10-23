@@ -1,0 +1,191 @@
+{
+  "groupCode": "G03",
+  "verificationCode": "COMBO-G03-7014",
+  "datasetVersion": "1.0.0",
+  "approvedOn": "2026-10-22",
+  "members": [
+    {
+      "id": "mohammed-osama-hasan",
+      "fullName": "Mohammed Osama Hasan",
+      "registrationNumber": "25/27014",
+      "aliases": ["Osama", "Mogadi", "Hasan", "group leader", "product lead"],
+      "githubUsername": "Mogadi",
+      "role": "Product and GitHub lead",
+      "skills": [
+        "product backlog",
+        "GitHub collaboration",
+        "issue design",
+        "integration decisions",
+        "evidence mapping",
+        "release planning"
+      ],
+      "targetUser": "Potato cooperatives, employers and innovation partners visiting a Musanze demonstration of AgriSoko Pocket.",
+      "problem": "A visitor could see an app, but not who built each part, which issue owned it, or how to verify the claim.",
+      "contribution": "Defined the G03 product scope, repository layout, issue board, contribution map and integration rules that the other members implement against.",
+      "feature": "Project home, group identity, GitHub workflow and contribution evidence map",
+      "outcomeMetric": "Six owned issues with acceptance criteria, named branches and a signed contribution map covering every assessed requirement. No cooperative sales metric is claimed.",
+      "evidenceLinks": {
+        "repository": "https://github.com/Mogadi/agrisoko-pocket-g03",
+        "issue": "https://github.com/Mogadi/agrisoko-pocket-g03/issues/1",
+        "branch": "https://github.com/Mogadi/agrisoko-pocket-g03/tree/feature/product-home-github",
+        "pullRequest": "https://github.com/Mogadi/agrisoko-pocket-g03/pull/1",
+        "commit": "https://github.com/Mogadi/agrisoko-pocket-g03/commits/feature/product-home-github"
+      },
+      "testerFeedback": "Internal review of the home copy and contribution table. External cooperative quotes are not included because none were recorded.",
+      "introductionDraft": "My name is Mohammed Osama Hasan. I lead AgriSoko Pocket G03 so potato cooperatives, employers and innovation partners in Musanze can see who built each part of the product. I set the backlog, repository layout, issue board and signed contribution map that every profile links back to. The repository, issues and contribution file are the evidence."
+    },
+    {
+      "id": "nuzha-zainel-abdeen",
+      "fullName": "Nuzha ZainEl-Abdeen Mohammed Ismail",
+      "registrationNumber": "25/27419",
+      "aliases": ["Nuzha", "ZainEl-Abdeen", "AI engineer", "data engineer"],
+      "githubUsername": "nuzha-g03",
+      "role": "AI and data engineer",
+      "skills": [
+        "TF-IDF",
+        "cosine similarity",
+        "scikit-learn",
+        "text preparation",
+        "members.json schema",
+        "model evaluation"
+      ],
+      "targetUser": "A demonstration visitor who wants a grounded answer to 'who built this?' without invented biography.",
+      "problem": "Name, role and feature questions were otherwise answered by guesswork or by generative text that could invent metrics.",
+      "contribution": "Designed members.json, built the searchable member documents, trained the TF-IDF index, documented the 0.45 confidence threshold and the exact name/alias boost, and evaluated representative queries.",
+      "feature": "Deterministic TF-IDF member matching engine",
+      "outcomeMetric": "Recorded evaluation on 19 member queries and 6 no-match queries: top-1 accuracy 1.0 and no-match rejection accuracy 1.0 at threshold 0.45. See ai-api/models/evaluation.json.",
+      "evidenceLinks": {
+        "repository": "https://github.com/Mogadi/agrisoko-pocket-g03",
+        "issue": "https://github.com/Mogadi/agrisoko-pocket-g03/issues/2",
+        "branch": "https://github.com/Mogadi/agrisoko-pocket-g03/tree/feature/tfidf-matching",
+        "pullRequest": "https://github.com/Mogadi/agrisoko-pocket-g03/pull/2",
+        "commit": "https://github.com/Mogadi/agrisoko-pocket-g03/commits/feature/tfidf-matching"
+      },
+      "testerFeedback": "Matching behaviour was checked with pytest (exact name, alias, role, feature, no-match). No farmer testimonial is claimed.",
+      "introductionDraft": "My name is Nuzha. I built the TF-IDF profile matcher in AgriSoko Pocket so a visitor can ask for a teammate by name, role or feature and receive only approved facts. I prepared members.json, the searchable documents, the 0.45 confidence rule and the evaluation queries. The fingerprint, evaluation table and pytest files are the evidence."
+    },
+    {
+      "id": "ehab-fakhralden",
+      "fullName": "Ehab Fakhralden Mohamed Hamid",
+      "registrationNumber": "25/27950",
+      "aliases": ["Ehab", "Fakhralden", "API engineer", "integration engineer"],
+      "githubUsername": "ehab-g03",
+      "role": "API and integration engineer",
+      "skills": [
+        "FastAPI",
+        "Pydantic",
+        "REST contracts",
+        "request validation",
+        "logging",
+        "CORS",
+        "deployment"
+      ],
+      "targetUser": "The AgriSoko Pocket Android client, which must receive a stable JSON contract on a reachable URL.",
+      "problem": "The matcher would stay a notebook unless it was served with validated input, safe errors and a health/model fingerprint the phone can display.",
+      "contribution": "Implemented GET /health, /members, /members/{id}, /model-info and POST /ask with Pydantic validation, 404/422 errors, request logging and Docker deployment files.",
+      "feature": "FastAPI matching service and mobile contract",
+      "outcomeMetric": "API pytest coverage for schema, missing question, unknown member 404 and ask responses. No invented uptime SLA is claimed.",
+      "evidenceLinks": {
+        "repository": "https://github.com/Mogadi/agrisoko-pocket-g03",
+        "issue": "https://github.com/Mogadi/agrisoko-pocket-g03/issues/3",
+        "branch": "https://github.com/Mogadi/agrisoko-pocket-g03/tree/feature/fastapi-contract",
+        "pullRequest": "https://github.com/Mogadi/agrisoko-pocket-g03/pull/3",
+        "commit": "https://github.com/Mogadi/agrisoko-pocket-g03/commits/feature/fastapi-contract"
+      },
+      "testerFeedback": "Contract tests run with pytest and httpx. Server-unavailable behaviour is handled on the phone, not by inventing a cloud metric.",
+      "introductionDraft": "My name is Ehab. I built the FastAPI service that AgriSoko Pocket G03 calls for live matching. The phone sends a question; the service validates it, runs Nuzha's matcher and returns only fields stored in members.json, plus confidence, reason and the dataset fingerprint. Pytest and /model-info are the evidence."
+    },
+    {
+      "id": "mojtaba-abdalitieef",
+      "fullName": "Mojtaba Abdalitieef Ahmed",
+      "registrationNumber": "25/27660",
+      "aliases": ["Mojtaba", "Moj", "Ahmed", "mobile UI", "navigation engineer"],
+      "githubUsername": "mojtaba-g03",
+      "role": "Mobile UI and navigation engineer",
+      "skills": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "React Navigation",
+        "accessible layout",
+        "Flexbox",
+        "profile presentation"
+      ],
+      "targetUser": "A cooperative visitor or examiner using a phone, including large text and limited time at a demo stand.",
+      "problem": "Matching results are useless if the screens hide confidence, evidence links or the way back to the directory.",
+      "contribution": "Implemented the Home, Ask, Result, Directory, Profile and About screens, typed stack and tab navigation, reusable cards and accessible labels.",
+      "feature": "React Native screens, navigation and profile presentation",
+      "outcomeMetric": "Six primary screens plus result/no-match/error states with typed routes. Visual checks are recorded in the test log after device or Expo web review. No download-count metric is claimed.",
+      "evidenceLinks": {
+        "repository": "https://github.com/Mogadi/agrisoko-pocket-g03",
+        "issue": "https://github.com/Mogadi/agrisoko-pocket-g03/issues/4",
+        "branch": "https://github.com/Mogadi/agrisoko-pocket-g03/tree/feature/mobile-ui-navigation",
+        "pullRequest": "https://github.com/Mogadi/agrisoko-pocket-g03/pull/4",
+        "commit": "https://github.com/Mogadi/agrisoko-pocket-g03/commits/feature/mobile-ui-navigation"
+      },
+      "testerFeedback": "Interface copy and navigation were reviewed against the assignment screen list. External farmer quotes are not included.",
+      "introductionDraft": "My name is Mojtaba. I built the screens of AgriSoko Pocket G03: Home, Ask, Result, Directory, Profile and About. A visitor can ask a question or tap a member, see confidence and evidence, and open GitHub links. Typed navigation and the screen components in mobile/src are the evidence."
+    },
+    {
+      "id": "lazarus-simboya",
+      "fullName": "Lazarus Simboya Ira Inyasio",
+      "registrationNumber": "25/28180",
+      "aliases": ["Lazarus", "Ira", "Simboya", "offline engineer", "quality engineer"],
+      "githubUsername": "lazarus-g03",
+      "role": "Offline and quality engineer",
+      "skills": [
+        "AsyncStorage",
+        "NetInfo",
+        "offline lookup",
+        "cache source labels",
+        "timeouts",
+        "retry",
+        "device testing"
+      ],
+      "targetUser": "A cooperative member or examiner who opens the APK in Kinigi or on campus when the network drops.",
+      "problem": "Live matching fails without a server. The product still had to identify a member by exact name, nickname or role and say clearly that the match is offline.",
+      "contribution": "Implemented directory caching, last-result cache, NetInfo banners, 8-second timeouts, retry, and exact name/alias/role offline lookup with live/cached/offline source labels.",
+      "feature": "Offline lookup, cache source labels and connection recovery",
+      "outcomeMetric": "Offline exact-name, alias and role lookup works from the bundled directory. Timeout and retry states are coded and listed in the test log. No claim is made about rural network coverage percentages.",
+      "evidenceLinks": {
+        "repository": "https://github.com/Mogadi/agrisoko-pocket-g03",
+        "issue": "https://github.com/Mogadi/agrisoko-pocket-g03/issues/5",
+        "branch": "https://github.com/Mogadi/agrisoko-pocket-g03/tree/feature/offline-cache-recovery",
+        "pullRequest": "https://github.com/Mogadi/agrisoko-pocket-g03/pull/5",
+        "commit": "https://github.com/Mogadi/agrisoko-pocket-g03/commits/feature/offline-cache-recovery"
+      },
+      "testerFeedback": "Airplane-mode lookup and retry after reconnect are the intended device checks. Record actual devices in TEST_LOG when they are run.",
+      "introductionDraft": "My name is Lazarus. I built offline mode for AgriSoko Pocket G03. If the network is gone, the phone still answers exact name, nickname and role questions from the bundled directory and labels the result as an offline match. Cache, NetInfo, timeout and retry live in mobile/src/services."
+    },
+    {
+      "id": "feras-saifaddin",
+      "fullName": "Feras Saifaddin Ismail Mohammed",
+      "registrationNumber": "25/27916",
+      "aliases": ["Feras", "Saifaddin", "release engineer", "evidence engineer"],
+      "githubUsername": "feras-g03",
+      "role": "Release and evidence engineer",
+      "skills": [
+        "EAS Build",
+        "Android APK",
+        "test matrix",
+        "technical reporting",
+        "submission audit",
+        "demonstration planning"
+      ],
+      "targetUser": "The lecturer and external reviewers who must install one APK and trace it to the repository, report and signed contributions.",
+      "problem": "Source on a laptop is not a product. The group needed a standalone APK, a tested release tag and a report that matches the running build.",
+      "contribution": "Configured the EAS Android build, version 1.0.0, test matrix, COMBO_A3_G03_REPORT.pdf, TEST_LOG, FEEDBACK and AI_USE, and the submission package layout.",
+      "feature": "Android release, demonstration evidence and submission audit",
+      "outcomeMetric": "EAS config and package name rw.ines.agrisoko.pocket.g03 are in the repository. The APK file is produced by eas build; it is not invented here. Device rows are completed when the APK is installed.",
+      "evidenceLinks": {
+        "repository": "https://github.com/Mogadi/agrisoko-pocket-g03",
+        "issue": "https://github.com/Mogadi/agrisoko-pocket-g03/issues/6",
+        "branch": "https://github.com/Mogadi/agrisoko-pocket-g03/tree/feature/apk-release-evidence",
+        "pullRequest": "https://github.com/Mogadi/agrisoko-pocket-g03/pull/6",
+        "commit": "https://github.com/Mogadi/agrisoko-pocket-g03/commits/feature/apk-release-evidence"
+      },
+      "testerFeedback": "Release checklist and report match the repository layout. Four consented testers must be recorded in FEEDBACK.pdf when they complete the tasks; names are not invented.",
+      "introductionDraft": "My name is Feras. I prepared the Android release of AgriSoko Pocket G03: EAS config, APK package name, test matrix, technical report and the submission ZIP. The eas.json file, report and evidence folder are what I built; the installed APK and GitHub Release tag v1.0.0 complete the evidence after the build is run."
+    }
+  ]
+}
