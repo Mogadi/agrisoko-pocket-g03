@@ -1,0 +1,25 @@
+name: Assessed feature
+description: One GitHub issue per assessed AgriSoko Pocket requirement
+title: "[G03] "
+labels: ["g03"]
+body:
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      placeholder: Full name and registration number
+    validations:
+      required: true
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      options: [product, ai-api, mobile, evidence, release]
+    validations:
+      required: true
+  - type: textarea
+    id: criteria
+    attributes:
+      label: Acceptance criteria
+    validations:
+      required: true

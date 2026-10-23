@@ -1,0 +1,39 @@
+{
+  "groupCode": "G03",
+  "verificationCode": "COMBO-G03-7014",
+  "datasetVersion": "1.0.0",
+  "modelVersion": "tfidf-g03-1.0.0",
+  "vectorizerType": "TF-IDF FeatureUnion: word ngrams (1-2) + char_wb ngrams (3-5), sublinear_tf, L2 cosine similarity, exact name/alias boost +0.30, content-term boost +0.12 per approved token (cap 0.45), threshold 0.45",
+  "threshold": 0.45,
+  "exactBoost": 0.3,
+  "memberCount": 6,
+  "memberIds": [
+    "mohammed-osama-hasan",
+    "nuzha-zainel-abdeen",
+    "ehab-fakhralden",
+    "mojtaba-abdalitieef",
+    "lazarus-simboya",
+    "feras-saifaddin"
+  ],
+  "datasetFingerprint": "sha256:b6a879a8c13b942b1ae55890afe989b3d8a2c259829ae93f4ea8b19badb75b20",
+  "builtAt": "2026-10-22T17:46:48Z",
+  "documentCharCounts": {
+    "mohammed-osama-hasan": 1266,
+    "nuzha-zainel-abdeen": 1285,
+    "ehab-fakhralden": 1190,
+    "mojtaba-abdalitieef": 1204,
+    "lazarus-simboya": 1301,
+    "feras-saifaddin": 1356
+  },
+  "limitations": [
+    "Returns only approved members.json fields.",
+    "Does not invent biographies, metrics, links or testimonials.",
+    "Queries scoring below 0.45 are rejected as no-match."
+  ],
+  "evaluationSummary": {
+    "top1Accuracy": 1.0,
+    "noMatchRejectionAccuracy": 1.0,
+    "memberQueryCount": 19,
+    "noMatchQueryCount": 6
+  }
+}
