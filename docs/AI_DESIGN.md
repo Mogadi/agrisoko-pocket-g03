@@ -1,6 +1,6 @@
 # AI design — G03
 
-**Owner:** Nuzha ZainEl-Abdeen Mohammed Ismail
+**Owner:** Nuzha ZainEl-Abdeen Mohammed Ismail.
 
 ## Schema
 See required keys in `ai-api/app/data_loader.py` and records in `ai-api/data/members.json`.
