@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>COMBO_A3_G03_REPORT</title>
+<style>
+  @page { size: A4; margin: 16mm 16mm 18mm; }
+  body { font-family: "DejaVu Sans", "Liberation Sans", Arial, sans-serif; color: #1C2418; font-size: 12px; line-height: 1.45; }
+  h1 { font-size: 20px; color: #164A28; margin: 0 0 8px; }
+  h2 { font-size: 15px; color: #1F6B3A; border-bottom: 2px solid #C4A35A; padding-bottom: 4px; }
+  h3 { font-size: 13px; margin-bottom: 4px; }
+  .cover { background: #1F6B3A; color: #F4F1EA; padding: 28px; border-radius: 12px; }
+  .cover h1, .cover h2 { color: #F4F1EA; border: 0; }
+  .gold { color: #C4A35A; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; }
+  th, td { border: 1px solid #D7D1C3; padding: 6px 8px; vertical-align: top; text-align: left; }
+  th { background: #E5F3EA; }
+  .page { page-break-after: always; }
+  .page:last-child { page-break-after: auto; }
+  .muted { color: #5C6756; }
+  .box { border: 1px solid #E2DDD0; padding: 10px; border-radius: 8px; margin: 8px 0; background: #FBF9F4; }
+  .shot { height: 210px; border: 1px dashed #C4A35A; border-radius: 8px; display: flex; align-items: center; justify-content: center; background: #E5F3EA; color: #164A28; font-weight: 700; text-align: center; padding: 8px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  ul { margin-top: 4px; }
+</style>
+</head>
+<body>
+<section class="page">
+  <div class="cover">
+    <div class="gold">INSTITUT D'ENSEIGNEMENT SUPÉRIEUR DE RUHENGERI</div>
+    <h1>COMBO_A3_G03_REPORT</h1>
+    <h2>AgriSoko Pocket G03 — UI/UX and AI system report</h2>
+    <p>Group 03 · Verification COMBO-G03-7014 · Version 1.0.0<br>
+    Repository https://github.com/Mogadi/agrisoko-pocket-g03</p>
+  </div>
+  <h2>1. Problem and users</h2>
+  <p>AgriSoko is preparing a short demonstration for potato cooperatives, employers and innovation partners in Musanze. Visitors needed more than a running APK: they needed to know <em>who</em> built each part and how to verify it. AgriSoko Pocket G03 lets a person ask a natural question and receive a profile that only repeats approved facts.</p>
+  <h3>Product promise</h3>
+  <p>Ask by name, nickname, role, skill or feature. See confidence, the reason for the match, an evidence-based introduction, and working links to GitHub. When the network is gone, exact identity lookup still works and is labelled offline.</p>
+  <table>
+    <tr><th>#</th><th>Member</th><th>Reg. no.</th><th>Primary role</th></tr>
+    <tr><td>1</td><td>Mohammed Osama Hasan</td><td>25/27014</td><td>Product and GitHub lead</td></tr>
+    <tr><td>2</td><td>Nuzha ZainEl-Abdeen Mohammed Ismail</td><td>25/27419</td><td>AI and data engineer</td></tr>
+    <tr><td>3</td><td>Ehab Fakhralden Mohamed Hamid</td><td>25/27950</td><td>API and integration engineer</td></tr>
+    <tr><td>4</td><td>Mojtaba Abdalitieef Ahmed</td><td>25/27660</td><td>Mobile UI and navigation engineer</td></tr>
+    <tr><td>5</td><td>Lazarus Simboya Ira Inyasio</td><td>25/28180</td><td>Offline and quality engineer</td></tr>
+    <tr><td>6</td><td>Feras Saifaddin Ismail Mohammed</td><td>25/27916</td><td>Release and evidence engineer</td></tr>
+  </table>
+  <p class="muted">Mohammed Osama Hasan is first on this product as group leader and Product/GitHub lead. No cooperative sales metric is claimed on this page.</p>
+</section>
+
+<section class="page">
+  <h2>2. Information architecture</h2>
+  <div class="box">
+    <strong>Tabs:</strong> Home · Ask · Team · About<br>
+    <strong>Stack:</strong> Result (AI match / no-match / error) · Profile
+  </div>
+  <h3>Online flow</h3>
+  <ol>
+    <li>User types a question. Empty and over-long text is rejected on the device.</li>
+    <li>NetInfo reports online. Axios POST /ask with an 8-second timeout.</li>
+    <li>Result shows member, confidence, reason, introduction, source badge “Live match”.</li>
+    <li>Profile opens evidence URLs with Linking.</li>
+  </ol>
+  <h3>Offline flow</h3>
+  <ol>
+    <li>NetInfo reports offline. The phone does not call TF-IDF.</li>
+    <li>Exact name, nickname or role is compared to the bundled directory.</li>
+    <li>A hit is labelled “Offline match”. A miss explains the limitation and lists names.</li>
+  </ol>
+  <h3>Recovery</h3>
+  <p>Timeout and 5xx/connection errors show Retry and keep the last useful introduction on screen. Cached directory and last ask live in AsyncStorage.</p>
+</section>
+
+<section class="page">
+  <h2>3. Annotated interface — Home, Ask, Result, Directory</h2>
+  <div class="grid">
+    <div class="shot">HOME<br>Purpose, users, G03, v1.0.0, online/offline chip, Ask / Directory actions</div>
+    <div class="shot">ASK<br>Multiline field, 300-character cap, example chips, validation before network</div>
+    <div class="shot">RESULT (match)<br>Name, role, confidence bar, reason, introduction, source badge, open profile</div>
+    <div class="shot">DIRECTORY<br>Six member cards, manual open, source badge live/cached/offline</div>
+  </div>
+  <p>Type sizes start at 16px body and 13px labels so large-text settings remain readable. Primary green on cream meets contrast for body copy. Interactive controls have accessibility labels.</p>
+</section>
+
+<section class="page">
+  <h2>4. Annotated interface — Profile, no-match, error, offline</h2>
+  <div class="grid">
+    <div class="shot">PROFILE<br>Contribution, skills, measured evidence, GitHub links with failed-link alert</div>
+    <div class="shot">NO MATCH<br>Plain refusal, suggestions of names/roles/features, no invented person</div>
+    <div class="shot">TIMEOUT / SERVER<br>Retry button, last useful result kept, no crash</div>
+    <div class="shot">OFFLINE<br>Amber “Offline match” badge; feature questions without a name are refused</div>
+  </div>
+  <p>About screen (not pictured here) holds data source, vectorizer text, fingerprint, limitations, GitHub URL, APK version, verification code and a writable API base URL.</p>
+</section>
+
+<section class="page">
+  <h2>5. AI design</h2>
+  <p>One searchable document per member is built from name, aliases, GitHub username, role, skills, target user, problem, contribution, feature, outcome metric, tester feedback and introduction draft. Empty optional fields are skipped; the member stays in the index.</p>
+  <table>
+    <tr><th>Choice</th><th>Rule</th></tr>
+    <tr><td>Vectorizer</td><td>FeatureUnion of word n-grams (1–2) and char_wb n-grams (3–5), sublinear TF, L2</td></tr>
+    <tr><td>Similarity</td><td>Cosine</td></tr>
+    <tr><td>Exact boost</td><td>+0.25 when a normalised name, alias, GitHub username or name token (&gt;2 chars) is contained in the query; cap 1.0</td></tr>
+    <tr><td>Threshold</td><td>0.45. A change must be justified by evaluation/queries.json.</td></tr>
+    <tr><td>Grounding</td><td>introductionDraft and evidenceLinks copied verbatim. No generative API.</td></tr>
+  </table>
+  <p>Fingerprint: SHA-256 of canonical members.json, exposed as <code>sha256:…</code> on /model-info.</p>
+</section>
+
+<section class="page">
+  <h2>6. API and integration</h2>
+  <table>
+    <tr><th>Endpoint</th><th>Contract</th></tr>
+    <tr><td>GET /health</td><td>status, version, groupCode, modelVersion, memberCount</td></tr>
+    <tr><td>GET /members</td><td>Safe directory fields only</td></tr>
+    <tr><td>GET /members/{id}</td><td>Full approved profile or 404</td></tr>
+    <tr><td>POST /ask</td><td>{query} → match, confidence, reason, introduction, evidence, modelVersion</td></tr>
+    <tr><td>GET /model-info</td><td>vectorizer, threshold, fingerprint, limitations, commit, evaluation</td></tr>
+  </table>
+  <div class="box">
+    <strong>Example POST /ask</strong><br>
+    Request: {"query":"Who built offline mode?"}<br>
+    Response includes match.id = lazarus-simboya, noMatch = false, introduction from the dataset.
+  </div>
+  <p>Empty query → 422. Phone timeout 8s. Offline fallback is exact identity lookup, not a guessed TF-IDF score stored on the device.</p>
+</section>
+
+<section class="page">
+  <h2>7. Testing evidence</h2>
+  <p>Automated tests live in <code>ai-api/tests/</code>: exact name, alias, role/feature, no-match, missing question, empty dataset, API schema, 404. Run <code>pytest -q</code> and <code>python build_index.py</code>.</p>
+  <p>Evaluation queries: at least three per member (name/alias, role, feature) plus six deliberate no-match questions including weather, president, pizza, rocket, gibberish and a cooking question about potatoes that must not pick a member.</p>
+  <p>Device matrix and tester findings are recorded in TEST_LOG.pdf and FEEDBACK.pdf. At packaging time the APK was not yet installed on physical phones; those rows are completed when Feras and Lazarus run the two-device check. Two reproducible fixes should be linked to GitHub issues after device testing (planned: API URL hint on first offline launch, and suggestion chips wrapping on small screens).</p>
+  <p><strong>Honesty rule:</strong> no farmer, cooperative statement or impact percentage is written here because none was collected.</p>
+</section>
+
+<section class="page">
+  <h2>8. GitHub collaboration</h2>
+  <table>
+    <tr><th>Member</th><th>Issue</th><th>Branch</th><th>Reviews</th></tr>
+    <tr><td>Mohammed</td><td>#1 product home</td><td>feature/product-home-github</td><td>Reviews Mojtaba #4</td></tr>
+    <tr><td>Nuzha</td><td>#2 matching</td><td>feature/tfidf-matching</td><td>Reviews Mohammed #1</td></tr>
+    <tr><td>Ehab</td><td>#3 FastAPI</td><td>feature/fastapi-contract</td><td>Reviews Nuzha #2</td></tr>
+    <tr><td>Mojtaba</td><td>#4 UI</td><td>feature/mobile-ui-navigation</td><td>Reviews Ehab #3</td></tr>
+    <tr><td>Lazarus</td><td>#5 offline</td><td>feature/offline-cache-recovery</td><td>Reviews Mojtaba #4</td></tr>
+    <tr><td>Feras</td><td>#6 release</td><td>feature/apk-release-evidence</td><td>Reviews Lazarus #5</td></tr>
+  </table>
+  <p>Paste <code>docs/issues/*.md</code> into GitHub before development. Tag <code>v1.0.0</code> after the APK exists. Sequential ZIP handoff is documented in <code>handoff/</code>.</p>
+  <p>Contribution map: <code>evidence/CONTRIBUTIONS.pdf</code>. Signatures are the same personal marks used on the signed G03 record dated 1 October 2026.</p>
+</section>
+
+<section class="page">
+  <h2>9. Results</h2>
+  <p>The repository contains a runnable FastAPI matcher and an Expo TypeScript client with the ten required behaviours. Evaluation numbers are written into <code>ai-api/models/evaluation.json</code> by <code>build_index.py</code> so this report can quote measured top-1 and no-match rejection accuracy rather than a guessed percentage.</p>
+  <p>Screenshots of the installed APK belong in <code>evidence/screenshots/</code> after the EAS build. Until then the annotated wireframes on pages 3–4 describe the implemented screens.</p>
+  <h2>10. Responsible AI, lessons, next steps</h2>
+  <ul>
+    <li>Privacy: no phones, addresses, passwords or tokens in members.json or the APK.</li>
+    <li>Truth: profiles refuse unverified impact. GitHub placeholder usernames must be replaced by each member.</li>
+    <li>AI assistance is declared in evidence/AI_USE.md. Members still own the defence of their files.</li>
+    <li>Lesson: a transparent TF-IDF index is easier to defend than a hidden prompt.</li>
+    <li>Next: deploy FastAPI to a public HTTPS URL, run EAS, film the three-minute demo, collect four consented testers.</li>
+  </ul>
+  <p class="muted">This report is written to match the source in this package. If a later commit changes the matcher, rebuild the index and refresh page 7.</p>
+</section>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "AgriSoko Pocket G03",
+    "slug": "agrisoko-pocket-g03",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1F6B3A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "rw.ines.agrisoko.pocket.g03"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1F6B3A"
+      },
+      "package": "rw.ines.agrisoko.pocket.g03",
+      "versionCode": 1,
+      "permissions": ["ACCESS_NETWORK_STATE", "INTERNET"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "apiBaseUrl": "http://127.0.0.1:8000",
+      "groupCode": "G03",
+      "verificationCode": "COMBO-G03-7014",
+      "eas": {
+        "projectId": "replace-after-eas-init"
+      }
+    },
+    "plugins": []
+  }
+}

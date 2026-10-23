@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+ai-api/models/*.pkl
+ai-api/models/*.joblib
+.coverage
+htmlcov/
+
+# Node / Expo
+node_modules/
+mobile/node_modules/
+.expo/
+dist/
+web-build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.metro-health-check*
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Secrets and local env
+.env.local
+.env.*.local
+google-services.json
+GoogleService-Info.plist
+
+# Build caches
+android/.gradle/
+android/app/build/
+ios/Pods/
+*.apk.bak
