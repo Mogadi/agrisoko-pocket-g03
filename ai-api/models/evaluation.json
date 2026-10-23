@@ -120,7 +120,7 @@
       "query": "Who is the Product and GitHub lead?",
       "expectedId": "mohammed-osama-hasan",
       "predictedId": "mohammed-osama-hasan",
-      "confidence": 0.6099,
+      "confidence": 0.6098,
       "correct": true,
       "reason": "Matched terms: who, is, the, product, and, github, lead Content-term boost for: product, github, lead. Cosine similarity 0.250; confidence 0.610."
     },
@@ -130,9 +130,9 @@
       "query": "Who built the contribution evidence map and repository layout?",
       "expectedId": "mohammed-osama-hasan",
       "predictedId": "mohammed-osama-hasan",
-      "confidence": 0.7856,
+      "confidence": 0.7855,
       "correct": true,
-      "reason": "Matched terms: who, built, the, contribution, evidence, map, and, repository Content-term boost for: contribution, evidence, map, repository, layout. Cosine similarity 0.336; confidence 0.786."
+      "reason": "Matched terms: who, built, the, contribution, evidence, map, and, repository Content-term boost for: contribution, evidence, map, repository, layout. Cosine similarity 0.335; confidence 0.785."
     },
     {
       "id": "m2-name",
@@ -140,9 +140,9 @@
       "query": "Tell me about Nuzha ZainEl-Abdeen",
       "expectedId": "nuzha-zainel-abdeen",
       "predictedId": "nuzha-zainel-abdeen",
-      "confidence": 0.7598,
+      "confidence": 0.7569,
       "correct": true,
-      "reason": "Matched terms: nuzha, zainel-abdeen Exact name/alias boost applied for 'nuzha'. Content-term boost for: nuzha, zainel-abdeen. Cosine similarity 0.220; confidence 0.760."
+      "reason": "Matched terms: nuzha, zainel-abdeen Exact name/alias boost applied for 'nuzha'. Content-term boost for: nuzha, zainel-abdeen. Cosine similarity 0.217; confidence 0.757."
     },
     {
       "id": "m2-alias",
@@ -150,9 +150,9 @@
       "query": "Who is Nuzha the AI engineer?",
       "expectedId": "nuzha-zainel-abdeen",
       "predictedId": "nuzha-zainel-abdeen",
-      "confidence": 0.74,
+      "confidence": 0.7369,
       "correct": true,
-      "reason": "Matched terms: who, is, nuzha, the, ai, engineer Exact name/alias boost applied for 'nuzha'. Content-term boost for: nuzha, engineer. Cosine similarity 0.200; confidence 0.740."
+      "reason": "Matched terms: who, is, nuzha, the, ai, engineer Exact name/alias boost applied for 'nuzha'. Content-term boost for: nuzha, engineer. Cosine similarity 0.197; confidence 0.737."
     },
     {
       "id": "m2-feature",
@@ -160,9 +160,9 @@
       "query": "Who built the TF-IDF matching engine and members.json schema?",
       "expectedId": "nuzha-zainel-abdeen",
       "predictedId": "nuzha-zainel-abdeen",
-      "confidence": 0.7828,
+      "confidence": 0.7818,
       "correct": true,
-      "reason": "Matched terms: who, built, the, tf-idf, matching, engine, and, members.json Content-term boost for: tf-idf, matching, engine, members.json, schema. Cosine similarity 0.333; confidence 0.783."
+      "reason": "Matched terms: who, built, the, tf-idf, matching, engine, and, members.json Content-term boost for: tf-idf, matching, engine, members.json, schema. Cosine similarity 0.332; confidence 0.782."
     },
     {
       "id": "m3-name",
@@ -170,7 +170,7 @@
       "query": "Tell me about Ehab Fakhralden Mohamed Hamid",
       "expectedId": "ehab-fakhralden",
       "predictedId": "ehab-fakhralden",
-      "confidence": 0.9726,
+      "confidence": 0.9727,
       "correct": true,
       "reason": "Matched terms: ehab, fakhralden, mohamed, hamid Exact name/alias boost applied for 'ehab fakhralden mohamed hamid'. Content-term boost for: ehab, fakhralden, mohamed, hamid. Cosine similarity 0.223; confidence 0.973."
     },
@@ -180,9 +180,9 @@
       "query": "Who is Ehab?",
       "expectedId": "ehab-fakhralden",
       "predictedId": "ehab-fakhralden",
-      "confidence": 0.5555,
+      "confidence": 0.5556,
       "correct": true,
-      "reason": "Matched terms: is, ehab Exact name/alias boost applied for 'ehab'. Content-term boost for: ehab. Cosine similarity 0.135; confidence 0.555."
+      "reason": "Matched terms: is, ehab Exact name/alias boost applied for 'ehab'. Content-term boost for: ehab. Cosine similarity 0.136; confidence 0.556."
     },
     {
       "id": "m3-feature",
@@ -190,7 +190,7 @@
       "query": "Who implemented the FastAPI endpoints and Pydantic validation?",
       "expectedId": "ehab-fakhralden",
       "predictedId": "ehab-fakhralden",
-      "confidence": 0.7338,
+      "confidence": 0.7339,
       "correct": true,
       "reason": "Matched terms: implemented, the, fastapi, and, pydantic, validation Content-term boost for: implemented, fastapi, pydantic, validation. Cosine similarity 0.284; confidence 0.734."
     },
@@ -200,7 +200,7 @@
       "query": "Tell me about Mojtaba Abdalitieef Ahmed",
       "expectedId": "mojtaba-abdalitieef",
       "predictedId": "mojtaba-abdalitieef",
-      "confidence": 0.902,
+      "confidence": 0.9019,
       "correct": true,
       "reason": "Matched terms: about, mojtaba, abdalitieef, ahmed Exact name/alias boost applied for 'mojtaba abdalitieef ahmed'. Content-term boost for: mojtaba, abdalitieef, ahmed. Cosine similarity 0.242; confidence 0.902."
     },
@@ -210,7 +210,7 @@
       "query": "Who is Moj the mobile UI engineer?",
       "expectedId": "mojtaba-abdalitieef",
       "predictedId": "mojtaba-abdalitieef",
-      "confidence": 0.8526,
+      "confidence": 0.8525,
       "correct": true,
       "reason": "Matched terms: is, moj, the, mobile, ui, engineer Exact name/alias boost applied for 'moj'. Content-term boost for: moj, mobile, engineer. Cosine similarity 0.193; confidence 0.853."
     },
@@ -220,7 +220,7 @@
       "query": "Who built the React Native screens and typed navigation?",
       "expectedId": "mojtaba-abdalitieef",
       "predictedId": "mojtaba-abdalitieef",
-      "confidence": 0.8429,
+      "confidence": 0.8428,
       "correct": true,
       "reason": "Matched terms: built, the, react, native, screens, and, typed, navigation Content-term boost for: react, native, screens, typed, navigation. Cosine similarity 0.393; confidence 0.843."
     },
@@ -232,7 +232,7 @@
       "predictedId": "lazarus-simboya",
       "confidence": 0.9895,
       "correct": true,
-      "reason": "Matched terms: about, lazarus, simboya, ira, inyasio Exact name/alias boost applied for 'lazarus simboya ira inyasio'. Content-term boost for: lazarus, simboya, ira, inyasio. Cosine similarity 0.240; confidence 0.990."
+      "reason": "Matched terms: about, lazarus, simboya, ira, inyasio Exact name/alias boost applied for 'lazarus simboya ira inyasio'. Content-term boost for: lazarus, simboya, ira, inyasio. Cosine similarity 0.239; confidence 0.989."
     },
     {
       "id": "m5-alias",
@@ -260,7 +260,7 @@
       "query": "Tell me about Feras Saifaddin Ismail Mohammed",
       "expectedId": "feras-saifaddin",
       "predictedId": "feras-saifaddin",
-      "confidence": 0.9578,
+      "confidence": 0.9577,
       "correct": true,
       "reason": "Matched terms: feras, saifaddin, ismail, mohammed Exact name/alias boost applied for 'feras saifaddin ismail mohammed'. Content-term boost for: feras, saifaddin, ismail, mohammed. Cosine similarity 0.208; confidence 0.958."
     },
@@ -270,9 +270,9 @@
       "query": "Who is Feras the release engineer?",
       "expectedId": "feras-saifaddin",
       "predictedId": "feras-saifaddin",
-      "confidence": 0.9155,
+      "confidence": 0.9154,
       "correct": true,
-      "reason": "Matched terms: who, is, feras, the, release, engineer Exact name/alias boost applied for 'feras'. Content-term boost for: feras, release, engineer. Cosine similarity 0.256; confidence 0.916."
+      "reason": "Matched terms: who, is, feras, the, release, engineer Exact name/alias boost applied for 'feras'. Content-term boost for: feras, release, engineer. Cosine similarity 0.255; confidence 0.915."
     },
     {
       "id": "m6-feature",
@@ -280,7 +280,7 @@
       "query": "Who configured the EAS Android APK and the technical report?",
       "expectedId": "feras-saifaddin",
       "predictedId": "feras-saifaddin",
-      "confidence": 0.8149,
+      "confidence": 0.8147,
       "correct": true,
       "reason": "Matched terms: who, configured, the, eas, android, apk, and, technical Content-term boost for: configured, eas, android, apk, technical. Cosine similarity 0.365; confidence 0.815."
     },
@@ -310,7 +310,7 @@
       "query": "Tell me about pizza recipes",
       "expectedId": null,
       "predictedId": "NO_MATCH",
-      "confidence": 0.0951,
+      "confidence": 0.095,
       "correct": true,
       "reason": "No confident match was found. Ask for a member name, nickname, role, skill or feature."
     },
@@ -320,7 +320,7 @@
       "query": "Who built the rocket engine?",
       "expectedId": null,
       "predictedId": "NO_MATCH",
-      "confidence": 0.2618,
+      "confidence": 0.2614,
       "correct": true,
       "reason": "No confident match was found. Ask for a member name, nickname, role, skill or feature."
     },
